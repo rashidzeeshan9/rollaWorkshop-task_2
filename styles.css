@@ -1,0 +1,183 @@
+#intro{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #5c6bc0;
+    text-overflow: ellipsis;
+    
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#app {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #3c3c3c;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #5c6bc0; 
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #5c6bc0; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3f51b5; 
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+}
+.error {
+    color: #e57373;
+    font-size: 0.875rem;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#show-register, #show-login {
+    background-color: transparent;
+    color: #5c6bc0;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#show-register:hover, #show-login:hover {
+    color: #3f51b5;
+}
+
+#portfolio-list {
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.portfolio-card {
+    background-color: #f3f4f6;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.portfolio-card p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.portfolio-card button {
+    background-color: #e57373;
+    border: none;
+    color: white;
+    font-size: 0.875rem;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.portfolio-card button:hover {
+    background-color: #d32f2f;
+}
+#dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#logout {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#logout:hover {
+    background-color: #d32f2f;
+}
+
+@media (max-width: 600px) {
+    .form-container, #app {
+        width: 90%;
+        padding: 15px;
+    }
+    button {
+        width: 100%;
+    }
+    .portfolio-card {
+        padding: 15px;
+    }
+}

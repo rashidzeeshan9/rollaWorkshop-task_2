@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <div id="app">
+  
+        <div id="login-form" class="form-container">
+            <h2>Login</h2>
+            <form id="login">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p id="login-error" class="error"></p>
+            <button id="show-register">Don't have an account? Register here</button>
+        </div>
+
+        <div id="register-form" class="form-container hidden">
+            <h2>Register</h2>
+            <form id="register">
+                <input type="text" id="new-username" placeholder="Username" required>
+                <input type="password" id="new-password" placeholder="Password" required>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <p id="register-error" class="error"></p>
+            <button id="show-login">Already have an account? Login here</button>
+        </div>
+
+        <div id="dashboard" class="hidden">
+            <h2>Welcome Developer, this porfolio form make to show your Skills <span id="user-name"></span></h2>
+   
+            <button id="create-portfolio">Create Your Portfolio</button>
+            <div id="portfolio-list"></div>
+            <button id="logout">Logout</button>
+        </div>
+
+        <div id="portfolio-form" class="form-container hidden">
+            <h2>Create Portfolio</h2>
+            <form id="create-portfolio-form">
+                <input type="text" id="portfolio-name" placeholder="Your Name" required>
+                <textarea id="bio" placeholder="Your Bio" required></textarea>
+                <input type="text" id="skills" placeholder="Skills (comma separated)" required>
+                <input type="text" id="projects" placeholder="Projects (comma separated)" required>
+                <button type="submit">Save Portfolio</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+<footer id="intro">Welcome Coder, This Portfolio website made by : Zeeshan Rashid</footer>
+</html>
